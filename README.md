@@ -33,7 +33,7 @@ The implemented system allows Eliza to respond intelligently via LLM, and on com
 ```bash
 git clone https://github.com/frikhaeya/eliza-llm-blockchain.git
 cd eliza-llm-blockchain
-
+```
 
 ### 2. Create a .env File
 
@@ -41,6 +41,7 @@ Copy the example and fill in your own keys:
 
 ```bash
 cp .env.example .env
+```
 
 Update the .env file with your keys:
 
@@ -49,7 +50,7 @@ OPENROUTER_API_KEY=your_openrouter_api_key
 SEPOLIA_API=https://sepolia.infura.io/v3/your_infura_project_id
 PRIVATE_KEY=your_private_key
 PUBLIC_KEY=your_public_address
-
+```
 
 ### 3. Set Up Python Environment
 
@@ -58,17 +59,19 @@ Create a virtual environment and install dependencies:
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
+```
 
 ### 4.  Run the Application
 
 ```bash
 python3 main.py
+```
 
 You will be prompted by Eliza. Type:
 
 ```bash
 send transaction
+```
 
 This will trigger the LLM, and if configured correctly, send a transaction on Sepolia.
 
@@ -80,4 +83,4 @@ You should see output similar to:
 LLM: Sending a transaction typically refers to transferring assets...
 Connecting to Sepolia using: https://sepolia.infura.io/v3/your_project_id
 Transaction sent: 0xabc123...def456
-
+```
